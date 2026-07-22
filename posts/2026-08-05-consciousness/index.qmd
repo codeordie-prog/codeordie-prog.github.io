@@ -13,7 +13,7 @@ toc: true
 
 ::: {.post-meta-bar}
 ::: {.post-date}
-August 5, 2026
+July 22, 2026
 :::
 
 ::: {.tag-list}
