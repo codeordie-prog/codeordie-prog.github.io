@@ -3,3 +3,4 @@ _site/
 **/*.quarto_ipynb
 .DS_Store
 Thumbs.db
+posts/2026-08-05-consciousness/*.docx

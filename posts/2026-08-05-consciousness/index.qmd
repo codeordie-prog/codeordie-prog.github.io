@@ -1,7 +1,7 @@
 ---
-title: "Consciousness and Computation"
+title: "Gödel's Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness"
 date: 2026-08-05
-categories: [philosophy, ai, cognition]
+categories: [logic, philosophy, consciousness]
 title-block: false
 toc: true
 ---
@@ -9,7 +9,7 @@ toc: true
 ::: {.post-header}
 [← Back home](/index.html){.back-link}
 
-# Consciousness and Computation
+# Gödel's Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness
 
 ::: {.post-meta-bar}
 ::: {.post-date}
@@ -17,13 +17,197 @@ August 5, 2026
 :::
 
 ::: {.tag-list}
-[philosophy](#){.tag} [ai](#){.tag} [cognition](#){.tag}
+[logic](#){.tag} [foundations](#){.tag} [consciousness](#){.tag}
 :::
 :::
 :::
 
 ::: {.page-content}
 ::: {.content-card .post-body}
-Draft notes for this post.
+For more than a century, mathematics was seen as the highest form of certainty. Hilbert's program aimed to formalize all of mathematics so that every truth could be derived mechanically from axioms and inference rules.
+
+In 1931, Kurt Gödel proved this cannot be done in full generality. In any sufficiently expressive and consistent formal system, there are true statements that cannot be proven inside that same system. This essay explains the logic behind that result and explores why it matters for questions about understanding and consciousness.
+
+## 1) Formal Systems and Hilbert's Dream
+
+A formal system contains:
+
+- axioms (accepted starting statements),
+- inference rules (how new statements are derived),
+- proofs (finite symbolic derivations).
+
+As a warm-up, consider: the sum of two even integers is even.
+
+If
+
+$$
+a = 2m,\qquad b = 2n
+$$
+
+for integers $m,n$, then
+
+$$
+a+b = 2m + 2n = 2(m+n).
+$$
+
+Let $k = m+n$; then
+
+$$
+a+b = 2k,
+$$
+
+so $a+b$ is even.
+
+This is exactly the kind of finite symbolic reasoning Hilbert believed could eventually capture all mathematical truth.
+
+## 2) Gödel Numbering: Turning Syntax into Arithmetic
+
+Gödel's key insight was to encode formulas and proofs as natural numbers.
+
+### 2.1 Symbol Encoding
+
+Assign each primitive symbol a number (example assignment):
+
+| Symbol | Number |
+|---|---:|
+| $\sim$ | 1 |
+| $=$ | 5 |
+| $0$ | 6 |
+| $S$ | 7 |
+| $(\;$ | 8 |
+| $\;)$ | 9 |
+
+For instance, the formula
+
+$$
+\sim(0=S0)
+$$
+
+maps to a sequence like $(1,8,6,5,7,6,9)$.
+
+### 2.2 Formula as One Integer
+
+Encode that sequence with prime powers:
+
+$$
+2^{1}\cdot 3^{8}\cdot 5^{6}\cdot 7^{5}\cdot 11^{7}\cdot 13^{6}\cdot 17^{9}.
+$$
+
+By unique prime factorization, each valid encoding decodes uniquely.
+
+Define
+
+$$
+g:\mathrm{PM}\to\mathbb{N},
+$$
+
+where $\mathrm{PM}$ is the formal system (e.g., Principia Mathematica). Distinct formulas get distinct Gödel numbers.
+
+### 2.3 Proof Encoding
+
+If a proof has formulas with Gödel numbers $a_1,a_2,\dots,a_n$, encode the whole proof as
+
+$$
+B = 2^{a_1}3^{a_2}5^{a_3}\cdots p_n^{a_n},
+$$
+
+where $p_n$ is the $n$-th prime.
+
+Now formulas and proofs are arithmetic objects.
+
+## 3) Arithmetic Talking About Its Own Statements
+
+Gödel then defined arithmetic relations that describe formal reasoning itself.
+
+### 3.1 Demonstrability Predicate
+
+$$
+\mathrm{Dem}(x,z)
+$$
+
+means: "$x$ is the Gödel number of a valid proof of the formula with Gödel number $z$."
+
+### 3.2 Substitution Function
+
+$$
+\mathrm{Sub}(x,y,z)
+$$
+
+means: take formula $x$, replace variable $y$ with numeral $z$, return the Gödel number of the resulting formula.
+
+Example:
+
+$$
+\mathrm{Sub}(500,17,5)=842.
+$$
+
+This arithmetic machinery enables controlled self-reference.
+
+## 4) Constructing the Gödel Sentence
+
+Start with template
+
+$$
+F(y)\equiv \neg(\exists x)\,\mathrm{Dem}\!\bigl(x,\mathrm{Sub}(y,17,y)\bigr).
+$$
+
+Let $g(F)=n$. Substitute $n$ for $y$:
+
+$$
+\mathrm{Sub}(n,17,n).
+$$
+
+Call the Gödel number of the resulting sentence $g$. Then, by construction,
+
+$$
+g=\mathrm{Sub}(n,17,n).
+$$
+
+So the final sentence is
+
+$$
+G\equiv \neg(\exists x)\,\mathrm{Dem}(x,g).
+$$
+
+In plain language: **"There is no proof of me."**
+
+## 5) First Incompleteness Theorem
+
+Assume the system is consistent and sufficiently expressive.
+
+1. If $G$ were provable, then $\mathrm{Dem}(p,g)$ would hold for some $p$, contradicting what $G$ states.
+2. Under Gödel's original $\omega$-consistency route (or Rosser-style refinements in modern presentations), $\neg G$ is also not provable.
+
+Therefore neither $G$ nor $\neg G$ is provable in the system:
+
+$$
+\text{incomplete system } \Rightarrow \exists \text{ undecidable statement } G.
+$$
+
+This yields the core statement:
+
+$$
+\text{Truth} \neq \text{Formal Provability}.
+$$
+
+## 6) Penrose and Mathematical Understanding
+
+Roger Penrose argues that Gödel's result suggests a gap between:
+
+- algorithmic symbol manipulation, and
+- genuine mathematical understanding.
+
+A formal system follows rules syntactically. A mathematician, however, seems to grasp semantic structure and logical necessity. Whether one accepts Penrose's full conclusion or not, the challenge is serious: can understanding be fully reduced to computation?
+
+## 7) Consciousness as the Medium of Understanding
+
+A possible philosophical reading is:
+
+- truth is objective and independent of us,
+- but access to truth-as-understood requires conscious awareness.
+
+Consciousness, on this view, does not create mathematical truth. Instead, it is the condition in which meanings are recognized and logical structure becomes intelligible.
+
+Gödel's theorem does not prove any one theory of mind. What it does force is conceptual humility: formal systems are powerful, but finite in reach; and understanding may not be exhausted by computation alone.
 :::
 :::
