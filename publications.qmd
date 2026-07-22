@@ -16,13 +16,13 @@ Research notes, papers, and long-form writing.
 ::: {.item-grid}
 
 ::: {.item-card}
-### Index
+### [A Confidence Estimation Framework for Skin & Product Audits](https://qurtis.tech/research/papers/confidence-estimation-framework)
 
 ::: {.item-meta}
-Updated as published
+June 18, 2026 · Qutis AI Research Team · Published
 :::
 
-Entries will be listed here — articles, preprints, and extended essays.
+Automated audits must know when they are uncertain. This paper describes how Qutis converts model token log-probabilities into per-observation confidence scores, aggregates them across multiple audit concerns, and routes low-confidence cases to qualified human review.
 :::
 
 :::
