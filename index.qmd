@@ -1,6 +1,6 @@
 ---
 title: "The real me"
-description: "Personal blog on mathematics, AI, and philosophy."
+description: "Personal blog on Mathematics, Artificial intelligence, and philosophy."
 title-block: false
 toc: false
 ---
