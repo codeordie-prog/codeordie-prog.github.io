@@ -1,0 +1,29 @@
+---
+title: "Publications"
+title-block: false
+toc: false
+---
+
+::: {.page-header}
+# Publications & Articles
+
+::: {.page-lead}
+Research notes, papers, and long-form writing.
+:::
+:::
+
+::: {.page-content}
+::: {.item-grid}
+
+::: {.item-card}
+### Index
+
+::: {.item-meta}
+Updated as published
+:::
+
+Entries will be listed here — articles, preprints, and extended essays.
+:::
+
+:::
+:::

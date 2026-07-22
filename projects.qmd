@@ -1,0 +1,39 @@
+---
+title: "Projects"
+title-block: false
+toc: false
+---
+
+::: {.page-header}
+# Projects
+
+::: {.page-lead}
+Things I'm building, exploring, and shipping.
+:::
+:::
+
+::: {.page-content}
+::: {.item-grid}
+
+::: {.item-card}
+### In progress
+
+::: {.item-meta}
+Coming soon
+:::
+
+Project entries will appear here as they take shape.
+:::
+
+::: {.item-card}
+### Open to collaboration
+
+::: {.item-meta}
+Always learning
+:::
+
+If a project here sparks your interest, reach out — I'm always open to thoughtful collaboration.
+:::
+
+:::
+:::

@@ -1,0 +1,29 @@
+---
+title: "Consciousness and Computation"
+date: 2026-08-05
+categories: [philosophy, ai, cognition]
+title-block: false
+toc: true
+---
+
+::: {.post-header}
+[← Back home](/index.html){.back-link}
+
+# Consciousness and Computation
+
+::: {.post-meta-bar}
+::: {.post-date}
+August 5, 2026
+:::
+
+::: {.tag-list}
+[philosophy](#){.tag} [ai](#){.tag} [cognition](#){.tag}
+:::
+:::
+:::
+
+::: {.page-content}
+::: {.content-card .post-body}
+Draft notes for this post.
+:::
+:::

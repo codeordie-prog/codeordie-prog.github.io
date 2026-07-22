@@ -1,0 +1,54 @@
+---
+title: "The real me"
+description: "Personal blog on mathematics, AI, and philosophy."
+title-block: false
+toc: false
+---
+
+::: {.hero}
+::: {.hero-inner}
+![](images/profile.jpeg){.profile-photo width="240" alt="Kelvin Ndeti"}
+
+::: {.hero-text}
+# Kelvin Ndeti {.hero-name}
+
+::: {.hero-tagline}
+Thoughts on **mathematics**, **AI**, and **philosophy** — where logic meets mind, and code meets curiosity.
+:::
+
+[About me →](about.qmd){.hero-link}
+:::
+:::
+:::
+
+::: {.section}
+## Latest writing
+
+::: {.posts-grid}
+
+::: {.post-card}
+### [Godel, Incompleteness, and Computation](/posts/2026-07-22-godel/)
+
+::: {.post-meta}
+July 22, 2026 · math · logic · computation
+:::
+:::
+
+::: {.post-card}
+### [Consciousness and Computation](/posts/2026-08-05-consciousness/)
+
+::: {.post-meta}
+August 5, 2026 · philosophy · AI · cognition
+:::
+:::
+
+::: {.post-card}
+### [Transformers: Intuition and Practice](/posts/2026-08-20-transformers/)
+
+::: {.post-meta}
+August 20, 2026 · ML · transformers · deep learning
+:::
+:::
+
+:::
+:::

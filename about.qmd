@@ -1,0 +1,32 @@
+---
+title: "About"
+title-block: false
+toc: false
+---
+
+::: {.page-header}
+# About Me
+
+::: {.page-lead}
+This space holds my writing on technical and non-technical topics — with a focus on clarity, rigor, and practical value.
+:::
+:::
+
+::: {.page-content}
+::: {.content-card}
+Hi, I'm **Kelvin Ndeti**.
+
+I write about mathematics, artificial intelligence, and philosophy. I'm interested in ideas that sit at the boundary of formal systems, minds, and machines — and in explaining them in ways that reward careful reading.
+
+When I'm not writing, I'm usually building, learning, or thinking through a problem that refuses to stay simple.
+:::
+
+::: {.content-card .profile-card}
+![](images/profile.jpeg){.profile-photo-sm width="120" alt="Kelvin Ndeti"}
+
+::: {.profile-card-text}
+**Kelvin Ndeti**  
+Writer · Thinker · Builder
+:::
+:::
+:::

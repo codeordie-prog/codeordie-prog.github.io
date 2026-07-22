@@ -1,0 +1,29 @@
+---
+title: "Godel, Incompleteness, and Computation"
+date: 2026-07-22
+categories: [math, logic, computation]
+title-block: false
+toc: true
+---
+
+::: {.post-header}
+[← Back home](/index.html){.back-link}
+
+# Godel, Incompleteness, and Computation
+
+::: {.post-meta-bar}
+::: {.post-date}
+July 22, 2026
+:::
+
+::: {.tag-list}
+[math](#){.tag} [logic](#){.tag} [computation](#){.tag}
+:::
+:::
+:::
+
+::: {.page-content}
+::: {.content-card .post-body}
+Draft notes for this post.
+:::
+:::
