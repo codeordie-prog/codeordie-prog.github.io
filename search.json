@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The real me",
+    "section": "",
+    "text": "Thoughts on mathematics, AI, and philosophy — where logic meets mind, and code meets curiosity.\n\nAbout me →"
+  },
+  {
+    "objectID": "index.html#latest-writing",
+    "href": "index.html#latest-writing",
+    "title": "The real me",
+    "section": "Latest writing",
+    "text": "Latest writing\n\n\nGödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness\n\nJuly 22, 2026 · logic · philosophy of mind · foundations of mathematics"
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html",
+    "href": "posts/2026-08-05-consciousness/index.html",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "",
+    "text": "← Back home\n\n\n\n\nJuly 22, 2026\n\n\nlogic foundations consciousness"
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#formal-systems-and-hilberts-dream",
+    "href": "posts/2026-08-05-consciousness/index.html#formal-systems-and-hilberts-dream",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "1) Formal Systems and Hilbert’s Dream",
+    "text": "1) Formal Systems and Hilbert’s Dream\nA formal system contains:\n\naxioms (accepted starting statements),\ninference rules (how new statements are derived),\nproofs (finite symbolic derivations).\n\nAs a warm-up, consider: the sum of two even integers is even.\nIf\n\\[\na = 2m,\\qquad b = 2n\n\\]\nfor integers \\(m,n\\), then\n\\[\na+b = 2m + 2n = 2(m+n).\n\\]\nLet \\(k = m+n\\); then\n\\[\na+b = 2k,\n\\]\nso \\(a+b\\) is even.\nThis is exactly the kind of finite symbolic reasoning Hilbert believed could eventually capture all mathematical truth."
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#gödel-numbering-turning-syntax-into-arithmetic",
+    "href": "posts/2026-08-05-consciousness/index.html#gödel-numbering-turning-syntax-into-arithmetic",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "2) Gödel Numbering: Turning Syntax into Arithmetic",
+    "text": "2) Gödel Numbering: Turning Syntax into Arithmetic\nGödel’s key insight was to encode formulas and proofs as natural numbers.\n\n2.1 Symbol Encoding\nAssign each primitive symbol a number (example assignment):\n\n\n\nSymbol\nNumber\n\n\n\n\n\\(\\sim\\)\n1\n\n\n\\(=\\)\n5\n\n\n\\(0\\)\n6\n\n\n\\(S\\)\n7\n\n\n\\((\\;\\)\n8\n\n\n\\(\\;)\\)\n9\n\n\n\nFor instance, the formula\n\\[\n\\sim(0=S0)\n\\]\nmaps to a sequence like \\((1,8,6,5,7,6,9)\\).\n\n\n2.2 Formula as One Integer\nEncode that sequence with prime powers:\n\\[\n2^{1}\\cdot 3^{8}\\cdot 5^{6}\\cdot 7^{5}\\cdot 11^{7}\\cdot 13^{6}\\cdot 17^{9}.\n\\]\nBy unique prime factorization, each valid encoding decodes uniquely.\nDefine\n\\[\ng:\\mathrm{PM}\\to\\mathbb{N},\n\\]\nwhere \\(\\mathrm{PM}\\) is the formal system (e.g., Principia Mathematica). Distinct formulas get distinct Gödel numbers.\n\n\n2.3 Proof Encoding\nIf a proof has formulas with Gödel numbers \\(a_1,a_2,\\dots,a_n\\), encode the whole proof as\n\\[\nB = 2^{a_1}3^{a_2}5^{a_3}\\cdots p_n^{a_n},\n\\]\nwhere \\(p_n\\) is the \\(n\\)-th prime.\nNow formulas and proofs are arithmetic objects."
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#arithmetic-talking-about-its-own-statements",
+    "href": "posts/2026-08-05-consciousness/index.html#arithmetic-talking-about-its-own-statements",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "3) Arithmetic Talking About Its Own Statements",
+    "text": "3) Arithmetic Talking About Its Own Statements\nGödel then defined arithmetic relations that describe formal reasoning itself.\n\n3.1 Demonstrability Predicate\n\\[\n\\mathrm{Dem}(x,z)\n\\]\nmeans: “\\(x\\) is the Gödel number of a valid proof of the formula with Gödel number \\(z\\).”\n\n\n3.2 Substitution Function\n\\[\n\\mathrm{Sub}(x,y,z)\n\\]\nmeans: take formula \\(x\\), replace variable \\(y\\) with numeral \\(z\\), return the Gödel number of the resulting formula.\nExample:\n\\[\n\\mathrm{Sub}(500,17,5)=842.\n\\]\nThis arithmetic machinery enables controlled self-reference."
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#constructing-the-gödel-sentence",
+    "href": "posts/2026-08-05-consciousness/index.html#constructing-the-gödel-sentence",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "4) Constructing the Gödel Sentence",
+    "text": "4) Constructing the Gödel Sentence\nStart with template\n\\[\nF(y)\\equiv \\neg(\\exists x)\\,\\mathrm{Dem}\\!\\bigl(x,\\mathrm{Sub}(y,17,y)\\bigr).\n\\]\nLet \\(g(F)=n\\). Substitute \\(n\\) for \\(y\\):\n\\[\n\\mathrm{Sub}(n,17,n).\n\\]\nCall the Gödel number of the resulting sentence \\(g\\). Then, by construction,\n\\[\ng=\\mathrm{Sub}(n,17,n).\n\\]\nSo the final sentence is\n\\[\nG\\equiv \\neg(\\exists x)\\,\\mathrm{Dem}(x,g).\n\\]\nIn plain language: “There is no proof of me.”"
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#first-incompleteness-theorem",
+    "href": "posts/2026-08-05-consciousness/index.html#first-incompleteness-theorem",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "5) First Incompleteness Theorem",
+    "text": "5) First Incompleteness Theorem\nAssume the system is consistent and sufficiently expressive.\n\nIf \\(G\\) were provable, then \\(\\mathrm{Dem}(p,g)\\) would hold for some \\(p\\), contradicting what \\(G\\) states.\nUnder Gödel’s original \\(\\omega\\)-consistency route (or Rosser-style refinements in modern presentations), \\(\\neg G\\) is also not provable.\n\nTherefore neither \\(G\\) nor \\(\\neg G\\) is provable in the system:\n\\[\n\\text{incomplete system } \\Rightarrow \\exists \\text{ undecidable statement } G.\n\\]\nThis yields the core statement:\n\\[\n\\text{Truth} \\neq \\text{Formal Provability}.\n\\]"
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#roger-penrose-and-the-nature-of-mathematical-understanding",
+    "href": "posts/2026-08-05-consciousness/index.html#roger-penrose-and-the-nature-of-mathematical-understanding",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "6. Roger Penrose and the Nature of Mathematical Understanding",
+    "text": "6. Roger Penrose and the Nature of Mathematical Understanding\nGödel’s incompleteness theorem establishes a precise mathematical result: within every sufficiently powerful and consistent formal system, there exist true statements that cannot be proven by the formal rules of that system.\nThe theorem itself does not discuss human intelligence, consciousness, or the mind. These questions arise only when we ask how mathematicians are nevertheless able to recognize the truth of Gödel’s undecidable sentence.\nThis question was explored extensively by the mathematical physicist Sir Roger Penrose, particularly in The Emperor’s New Mind (1989) and Shadows of the Mind (1994). Penrose argues that Gödel’s theorem reveals an important distinction between formal computation and human understanding.\nA formal system operates entirely by the mechanical application of rules. It manipulates symbols according to fixed syntactic procedures without attaching meaning to those symbols. Every proof consists solely of symbolic transformations permitted by the axioms and rules of inference.\nHuman mathematicians, however, appear to do something fundamentally different.\nWhen presented with Gödel’s construction, we do not merely manipulate symbols. We follow the reasoning step by step, understand why the Gödel sentence refers to itself, and recognise why a consistent formal system cannot prove it. The conclusion is not reached by blindly executing symbolic rules but by grasping the logical structure of the argument.\nPenrose therefore proposes that mathematical understanding is not exhausted by algorithmic computation. In his words, genuine understanding is not computable.\nThis claim is subtle and should not be misunderstood.\nPenrose is not arguing that computers cannot perform mathematics. Modern computers routinely verify proofs, manipulate symbolic expressions, and solve extraordinarily complex mathematical problems.\nRather, his argument is that computation alone—the blind execution of formal rules—is insufficient to account for the capacity to recognise mathematical truth. Symbol manipulation and understanding are not obviously identical processes.\nGödel’s theorem provides the motivation for this distinction.\nA formal system can derive only those statements permitted by its rules of inference. Yet Gödel constructs a statement whose truth appears to transcend those very rules. Human mathematicians can analyse the construction, understand its meaning, and appreciate why the sentence is true despite being formally undecidable.\nWhether one ultimately accepts Penrose’s conclusion remains a matter of philosophical debate. Many researchers in artificial intelligence and cognitive science reject his interpretation, arguing that Gödel’s theorem does not establish any fundamental limitation on machine intelligence. Others regard Penrose’s argument as one of the strongest philosophical challenges to purely computational theories of mind.\nRegardless of where one stands in this debate, Penrose’s interpretation raises an important question:\nIf genuine understanding is not merely computation, then what is the nature of the faculty that understands?\nThis question shifts the discussion from mathematics to philosophy of mind. Gödel demonstrated that truth cannot always be reduced to formal derivation. Penrose suggests that understanding cannot always be reduced to computation.\nThe remaining question is therefore not about mathematics but about consciousness itself.\nIf understanding is indeed something more than computation, then what role does consciousness play in making understanding possible?"
+  },
+  {
+    "objectID": "posts/2026-08-05-consciousness/index.html#truth-understanding-and-consciousness",
+    "href": "posts/2026-08-05-consciousness/index.html#truth-understanding-and-consciousness",
+    "title": "Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness",
+    "section": "7. Truth, Understanding, and Consciousness",
+    "text": "7. Truth, Understanding, and Consciousness\nGödel’s incompleteness theorem changed the foundations of mathematics by demonstrating that formal proof and mathematical truth are not identical. A sufficiently powerful formal system can derive only those statements permitted by its axioms and rules of inference, yet there remain truths that lie beyond those formal methods.\nRoger Penrose extends this observation beyond mathematics. If human beings are capable of recognising truths that no formal system can derive from within itself, then genuine understanding appears to involve something more than the mechanical execution of algorithms.\nThis raises a profound philosophical question:\nWhat is understanding?\nA computer can manipulate symbols according to formal rules. It can verify proofs, execute algorithms, and perform astonishingly sophisticated calculations. Yet throughout these computations, it need not attach any meaning to the symbols it manipulates. The symbols are processed syntactically rather than semantically.\nHuman understanding appears different.\nWhen a mathematician studies Gödel’s proof, they do not merely observe a sequence of symbolic transformations. They understand why each step follows from the previous one. They recognise the meaning of the Gödel sentence, appreciate the distinction between truth and provability, and grasp the logical necessity of the conclusion.\nIf Penrose is correct that this capacity cannot be completely explained by computation alone, then an obvious question follows:\nWhat faculty makes understanding possible?\nOne possible answer is consciousness.\nConsciousness is the condition under which meanings are experienced, relationships are recognised, and truths become intelligible. Without consciousness, symbols remain symbols. Equations remain patterns of marks on a page. Logical derivations remain sequences of formal manipulations. It is consciousness that transforms symbolic structures into objects of understanding.\nUnder this perspective, Gödel’s theorem acquires a broader philosophical significance.\nGödel separates truth from formal derivation.\nPenrose argues that human understanding can nevertheless recognise certain mathematical truths, suggesting that understanding is not exhausted by computation.\nIf consciousness is the precondition for genuine understanding, then consciousness becomes the medium through which truth is disclosed.\nThis does not imply that mathematical truths come into existence because conscious beings recognise them. The truth of\n\\[\n2+2=4\n\\]\ndoes not depend upon anyone thinking about it.\nRather, it suggests a different relationship.\nTruth may exist independently of every conscious observer, yet truth is encountered, recognised, and understood only through conscious experience.\nIn this sense, consciousness is not the creator of truth, but its indispensable witness.\nIf this view is correct, then the relationship between consciousness and reality deserves to be reconsidered. Modern science has often approached consciousness as something produced by sufficiently complex physical processes, treating subjective experience as an emergent property of matter.\nGödel’s theorem does not refute this position.\nHowever, it challenges a closely related assumption: that understanding can be fully reduced to formal computation.\nIf understanding cannot be completely explained as computation, and if consciousness is the necessary condition for understanding, then consciousness may occupy a more fundamental place in our picture of reality than contemporary computational theories allow.\nThis possibility invites a different way of thinking about the so-called hard problem of consciousness.\nInstead of asking,\nHow does matter produce consciousness?\none might instead ask,\nHow does consciousness become organised into self-aware minds capable of recognising truth?\nUnder such a perspective, brains would not manufacture consciousness in the way a machine manufactures a product. Rather, they would organise, structure, and reflect an already existing capacity for conscious experience into the unified first-person awareness that each of us possesses.\nWhether this hypothesis is ultimately correct remains an open philosophical question.\nGödel’s theorem does not answer it.\nNeither does Penrose’s interpretation.\nWhat they provide is something equally valuable: a reason to question the assumption that understanding is nothing more than computation.\nPerhaps the deepest lesson of Gödel’s incompleteness theorem is not merely that formal systems have limits, but that the search for truth cannot be completely separated from the conscious mind that understands it.\nThe mathematics reveals the limits of formal reasoning.\nThe philosophy begins where those limits are reached."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\n\nThings I’m building, exploring, and shipping.\n\n\n\n\n\nIn progress\n\nComing soon\n\nProject entries will appear here as they take shape.\n\n\nOpen to collaboration\n\nAlways learning\n\nIf a project here sparks your interest, reach out — I’m always open to thoughtful collaboration."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications & Articles\n\nResearch notes, papers, and long-form writing.\n\n\n\n\n\nA Confidence Estimation Framework for Skin & Product Audits\n\nJune 18, 2026 · Qutis AI Research Team · Published\n\nAutomated audits must know when they are uncertain. This paper describes how Qutis converts model token log-probabilities into per-observation confidence scores, aggregates them across multiple audit concerns, and routes low-confidence cases to qualified human review."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me\n\nThis space holds my writing on technical and non-technical topics — with a focus on clarity, rigor, and practical value.\n\n\n\n\nHi, I’m Kelvin Ndeti.\nI write about mathematics, artificial intelligence, and philosophy. I’m interested in ideas that sit at the boundary of formal systems, minds, and machines — and in explaining them in ways that reward careful reading.\nWhen I’m not writing, I’m usually building, learning, or thinking through a problem that refuses to stay simple.\n\n\n\n\nKelvin Ndeti\nWriter · Thinker · Builder"
+  }
+]

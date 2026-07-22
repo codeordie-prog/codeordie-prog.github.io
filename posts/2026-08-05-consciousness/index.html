@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-07-22">
+
+<title>Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness – The real me</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-540f71f7f7571f63f0aad695e52d0010.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">The real me</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">logic</div>
+    <div class="quarto-category">philosophy</div>
+    <div class="quarto-category">consciousness</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 22, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="post-header">
+<p><a href="../../index.html" class="back-link">← Back home</a></p>
+<section id="gödels-incompleteness-theorem-truth-and-the-fundamental-nature-of-consciousness" class="level1">
+<h1>Gödel’s Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness</h1>
+<div class="post-meta-bar">
+<div class="post-date">
+<p>July 22, 2026</p>
+</div>
+<div class="tag-list">
+<p><a href="#" class="tag">logic</a> <a href="#" class="tag">foundations</a> <a href="#" class="tag">consciousness</a></p>
+</div>
+</div>
+</section>
+</div>
+<div class="page-content">
+<div class="content-card post-body">
+<p>For more than a century, mathematics was seen as the highest form of certainty. Hilbert’s program aimed to formalize all of mathematics so that every truth could be derived mechanically from axioms and inference rules.</p>
+<p>In 1931, Kurt Gödel proved this cannot be done in full generality. In any sufficiently expressive and consistent formal system, there are true statements that cannot be proven inside that same system. This essay explains the logic behind that result and explores why it matters for questions about understanding and consciousness.</p>
+<section id="formal-systems-and-hilberts-dream" class="level2">
+<h2 class="anchored" data-anchor-id="formal-systems-and-hilberts-dream">1) Formal Systems and Hilbert’s Dream</h2>
+<p>A formal system contains:</p>
+<ul>
+<li>axioms (accepted starting statements),</li>
+<li>inference rules (how new statements are derived),</li>
+<li>proofs (finite symbolic derivations).</li>
+</ul>
+<p>As a warm-up, consider: the sum of two even integers is even.</p>
+<p>If</p>
+<p><span class="math display">\[
+a = 2m,\qquad b = 2n
+\]</span></p>
+<p>for integers <span class="math inline">\(m,n\)</span>, then</p>
+<p><span class="math display">\[
+a+b = 2m + 2n = 2(m+n).
+\]</span></p>
+<p>Let <span class="math inline">\(k = m+n\)</span>; then</p>
+<p><span class="math display">\[
+a+b = 2k,
+\]</span></p>
+<p>so <span class="math inline">\(a+b\)</span> is even.</p>
+<p>This is exactly the kind of finite symbolic reasoning Hilbert believed could eventually capture all mathematical truth.</p>
+</section>
+<section id="gödel-numbering-turning-syntax-into-arithmetic" class="level2">
+<h2 class="anchored" data-anchor-id="gödel-numbering-turning-syntax-into-arithmetic">2) Gödel Numbering: Turning Syntax into Arithmetic</h2>
+<p>Gödel’s key insight was to encode formulas and proofs as natural numbers.</p>
+<section id="symbol-encoding" class="level3">
+<h3 class="anchored" data-anchor-id="symbol-encoding">2.1 Symbol Encoding</h3>
+<p>Assign each primitive symbol a number (example assignment):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th style="text-align: right;">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\sim\)</span></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(=\)</span></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(0\)</span></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S\)</span></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\((\;\)</span></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\;)\)</span></td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+<p>For instance, the formula</p>
+<p><span class="math display">\[
+\sim(0=S0)
+\]</span></p>
+<p>maps to a sequence like <span class="math inline">\((1,8,6,5,7,6,9)\)</span>.</p>
+</section>
+<section id="formula-as-one-integer" class="level3">
+<h3 class="anchored" data-anchor-id="formula-as-one-integer">2.2 Formula as One Integer</h3>
+<p>Encode that sequence with prime powers:</p>
+<p><span class="math display">\[
+2^{1}\cdot 3^{8}\cdot 5^{6}\cdot 7^{5}\cdot 11^{7}\cdot 13^{6}\cdot 17^{9}.
+\]</span></p>
+<p>By unique prime factorization, each valid encoding decodes uniquely.</p>
+<p>Define</p>
+<p><span class="math display">\[
+g:\mathrm{PM}\to\mathbb{N},
+\]</span></p>
+<p>where <span class="math inline">\(\mathrm{PM}\)</span> is the formal system (e.g., Principia Mathematica). Distinct formulas get distinct Gödel numbers.</p>
+</section>
+<section id="proof-encoding" class="level3">
+<h3 class="anchored" data-anchor-id="proof-encoding">2.3 Proof Encoding</h3>
+<p>If a proof has formulas with Gödel numbers <span class="math inline">\(a_1,a_2,\dots,a_n\)</span>, encode the whole proof as</p>
+<p><span class="math display">\[
+B = 2^{a_1}3^{a_2}5^{a_3}\cdots p_n^{a_n},
+\]</span></p>
+<p>where <span class="math inline">\(p_n\)</span> is the <span class="math inline">\(n\)</span>-th prime.</p>
+<p>Now formulas and proofs are arithmetic objects.</p>
+</section>
+</section>
+<section id="arithmetic-talking-about-its-own-statements" class="level2">
+<h2 class="anchored" data-anchor-id="arithmetic-talking-about-its-own-statements">3) Arithmetic Talking About Its Own Statements</h2>
+<p>Gödel then defined arithmetic relations that describe formal reasoning itself.</p>
+<section id="demonstrability-predicate" class="level3">
+<h3 class="anchored" data-anchor-id="demonstrability-predicate">3.1 Demonstrability Predicate</h3>
+<p><span class="math display">\[
+\mathrm{Dem}(x,z)
+\]</span></p>
+<p>means: “<span class="math inline">\(x\)</span> is the Gödel number of a valid proof of the formula with Gödel number <span class="math inline">\(z\)</span>.”</p>
+</section>
+<section id="substitution-function" class="level3">
+<h3 class="anchored" data-anchor-id="substitution-function">3.2 Substitution Function</h3>
+<p><span class="math display">\[
+\mathrm{Sub}(x,y,z)
+\]</span></p>
+<p>means: take formula <span class="math inline">\(x\)</span>, replace variable <span class="math inline">\(y\)</span> with numeral <span class="math inline">\(z\)</span>, return the Gödel number of the resulting formula.</p>
+<p>Example:</p>
+<p><span class="math display">\[
+\mathrm{Sub}(500,17,5)=842.
+\]</span></p>
+<p>This arithmetic machinery enables controlled self-reference.</p>
+</section>
+</section>
+<section id="constructing-the-gödel-sentence" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-the-gödel-sentence">4) Constructing the Gödel Sentence</h2>
+<p>Start with template</p>
+<p><span class="math display">\[
+F(y)\equiv \neg(\exists x)\,\mathrm{Dem}\!\bigl(x,\mathrm{Sub}(y,17,y)\bigr).
+\]</span></p>
+<p>Let <span class="math inline">\(g(F)=n\)</span>. Substitute <span class="math inline">\(n\)</span> for <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+\mathrm{Sub}(n,17,n).
+\]</span></p>
+<p>Call the Gödel number of the resulting sentence <span class="math inline">\(g\)</span>. Then, by construction,</p>
+<p><span class="math display">\[
+g=\mathrm{Sub}(n,17,n).
+\]</span></p>
+<p>So the final sentence is</p>
+<p><span class="math display">\[
+G\equiv \neg(\exists x)\,\mathrm{Dem}(x,g).
+\]</span></p>
+<p>In plain language: <strong>“There is no proof of me.”</strong></p>
+</section>
+<section id="first-incompleteness-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="first-incompleteness-theorem">5) First Incompleteness Theorem</h2>
+<p>Assume the system is consistent and sufficiently expressive.</p>
+<ol type="1">
+<li>If <span class="math inline">\(G\)</span> were provable, then <span class="math inline">\(\mathrm{Dem}(p,g)\)</span> would hold for some <span class="math inline">\(p\)</span>, contradicting what <span class="math inline">\(G\)</span> states.</li>
+<li>Under Gödel’s original <span class="math inline">\(\omega\)</span>-consistency route (or Rosser-style refinements in modern presentations), <span class="math inline">\(\neg G\)</span> is also not provable.</li>
+</ol>
+<p>Therefore neither <span class="math inline">\(G\)</span> nor <span class="math inline">\(\neg G\)</span> is provable in the system:</p>
+<p><span class="math display">\[
+\text{incomplete system } \Rightarrow \exists \text{ undecidable statement } G.
+\]</span></p>
+<p>This yields the core statement:</p>
+<p><span class="math display">\[
+\text{Truth} \neq \text{Formal Provability}.
+\]</span></p>
+</section>
+<section id="roger-penrose-and-the-nature-of-mathematical-understanding" class="level2">
+<h2 class="anchored" data-anchor-id="roger-penrose-and-the-nature-of-mathematical-understanding">6. Roger Penrose and the Nature of Mathematical Understanding</h2>
+<p>Gödel’s incompleteness theorem establishes a precise mathematical result: within every sufficiently powerful and consistent formal system, there exist true statements that cannot be proven by the formal rules of that system.</p>
+<p>The theorem itself does not discuss human intelligence, consciousness, or the mind. These questions arise only when we ask how mathematicians are nevertheless able to recognize the truth of Gödel’s undecidable sentence.</p>
+<p>This question was explored extensively by the mathematical physicist Sir Roger Penrose, particularly in <em>The Emperor’s New Mind</em> (1989) and <em>Shadows of the Mind</em> (1994). Penrose argues that Gödel’s theorem reveals an important distinction between formal computation and human understanding.</p>
+<p>A formal system operates entirely by the mechanical application of rules. It manipulates symbols according to fixed syntactic procedures without attaching meaning to those symbols. Every proof consists solely of symbolic transformations permitted by the axioms and rules of inference.</p>
+<p>Human mathematicians, however, appear to do something fundamentally different.</p>
+<p>When presented with Gödel’s construction, we do not merely manipulate symbols. We follow the reasoning step by step, understand why the Gödel sentence refers to itself, and recognise why a consistent formal system cannot prove it. The conclusion is not reached by blindly executing symbolic rules but by grasping the logical structure of the argument.</p>
+<p>Penrose therefore proposes that mathematical understanding is not exhausted by algorithmic computation. In his words, genuine understanding is not computable.</p>
+<p>This claim is subtle and should not be misunderstood.</p>
+<p>Penrose is not arguing that computers cannot perform mathematics. Modern computers routinely verify proofs, manipulate symbolic expressions, and solve extraordinarily complex mathematical problems.</p>
+<p>Rather, his argument is that computation alone—the blind execution of formal rules—is insufficient to account for the capacity to recognise mathematical truth. Symbol manipulation and understanding are not obviously identical processes.</p>
+<p>Gödel’s theorem provides the motivation for this distinction.</p>
+<p>A formal system can derive only those statements permitted by its rules of inference. Yet Gödel constructs a statement whose truth appears to transcend those very rules. Human mathematicians can analyse the construction, understand its meaning, and appreciate why the sentence is true despite being formally undecidable.</p>
+<p>Whether one ultimately accepts Penrose’s conclusion remains a matter of philosophical debate. Many researchers in artificial intelligence and cognitive science reject his interpretation, arguing that Gödel’s theorem does not establish any fundamental limitation on machine intelligence. Others regard Penrose’s argument as one of the strongest philosophical challenges to purely computational theories of mind.</p>
+<p>Regardless of where one stands in this debate, Penrose’s interpretation raises an important question:</p>
+<p>If genuine understanding is not merely computation, then what is the nature of the faculty that understands?</p>
+<p>This question shifts the discussion from mathematics to philosophy of mind. Gödel demonstrated that truth cannot always be reduced to formal derivation. Penrose suggests that understanding cannot always be reduced to computation.</p>
+<p>The remaining question is therefore not about mathematics but about consciousness itself.</p>
+<p>If understanding is indeed something more than computation, then what role does consciousness play in making understanding possible?</p>
+</section>
+<section id="truth-understanding-and-consciousness" class="level2">
+<h2 class="anchored" data-anchor-id="truth-understanding-and-consciousness">7. Truth, Understanding, and Consciousness</h2>
+<p>Gödel’s incompleteness theorem changed the foundations of mathematics by demonstrating that formal proof and mathematical truth are not identical. A sufficiently powerful formal system can derive only those statements permitted by its axioms and rules of inference, yet there remain truths that lie beyond those formal methods.</p>
+<p>Roger Penrose extends this observation beyond mathematics. If human beings are capable of recognising truths that no formal system can derive from within itself, then genuine understanding appears to involve something more than the mechanical execution of algorithms.</p>
+<p>This raises a profound philosophical question:</p>
+<p>What is understanding?</p>
+<p>A computer can manipulate symbols according to formal rules. It can verify proofs, execute algorithms, and perform astonishingly sophisticated calculations. Yet throughout these computations, it need not attach any meaning to the symbols it manipulates. The symbols are processed syntactically rather than semantically.</p>
+<p>Human understanding appears different.</p>
+<p>When a mathematician studies Gödel’s proof, they do not merely observe a sequence of symbolic transformations. They understand why each step follows from the previous one. They recognise the meaning of the Gödel sentence, appreciate the distinction between truth and provability, and grasp the logical necessity of the conclusion.</p>
+<p>If Penrose is correct that this capacity cannot be completely explained by computation alone, then an obvious question follows:</p>
+<p>What faculty makes understanding possible?</p>
+<p>One possible answer is consciousness.</p>
+<p>Consciousness is the condition under which meanings are experienced, relationships are recognised, and truths become intelligible. Without consciousness, symbols remain symbols. Equations remain patterns of marks on a page. Logical derivations remain sequences of formal manipulations. It is consciousness that transforms symbolic structures into objects of understanding.</p>
+<p>Under this perspective, Gödel’s theorem acquires a broader philosophical significance.</p>
+<p>Gödel separates truth from formal derivation.</p>
+<p>Penrose argues that human understanding can nevertheless recognise certain mathematical truths, suggesting that understanding is not exhausted by computation.</p>
+<p>If consciousness is the precondition for genuine understanding, then consciousness becomes the medium through which truth is disclosed.</p>
+<p>This does not imply that mathematical truths come into existence because conscious beings recognise them. The truth of</p>
+<p><span class="math display">\[
+2+2=4
+\]</span></p>
+<p>does not depend upon anyone thinking about it.</p>
+<p>Rather, it suggests a different relationship.</p>
+<p>Truth may exist independently of every conscious observer, yet truth is encountered, recognised, and understood only through conscious experience.</p>
+<p>In this sense, consciousness is not the creator of truth, but its indispensable witness.</p>
+<p>If this view is correct, then the relationship between consciousness and reality deserves to be reconsidered. Modern science has often approached consciousness as something produced by sufficiently complex physical processes, treating subjective experience as an emergent property of matter.</p>
+<p>Gödel’s theorem does not refute this position.</p>
+<p>However, it challenges a closely related assumption: that understanding can be fully reduced to formal computation.</p>
+<p>If understanding cannot be completely explained as computation, and if consciousness is the necessary condition for understanding, then consciousness may occupy a more fundamental place in our picture of reality than contemporary computational theories allow.</p>
+<p>This possibility invites a different way of thinking about the so-called hard problem of consciousness.</p>
+<p>Instead of asking,</p>
+<p>How does matter produce consciousness?</p>
+<p>one might instead ask,</p>
+<p>How does consciousness become organised into self-aware minds capable of recognising truth?</p>
+<p>Under such a perspective, brains would not manufacture consciousness in the way a machine manufactures a product. Rather, they would organise, structure, and reflect an already existing capacity for conscious experience into the unified first-person awareness that each of us possesses.</p>
+<p>Whether this hypothesis is ultimately correct remains an open philosophical question.</p>
+<p>Gödel’s theorem does not answer it.</p>
+<p>Neither does Penrose’s interpretation.</p>
+<p>What they provide is something equally valuable: a reason to question the assumption that understanding is nothing more than computation.</p>
+<p>Perhaps the deepest lesson of Gödel’s incompleteness theorem is not merely that formal systems have limits, but that the search for truth cannot be completely separated from the conscious mind that understands it.</p>
+<p>The mathematics reveals the limits of formal reasoning.</p>
+<p>The philosophy begins where those limits are reached.</p>
+</section>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Kelvin Ndeti</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
