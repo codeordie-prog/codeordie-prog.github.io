@@ -1,6 +1,6 @@
 ---
 title: "Gödel's Incompleteness Theorem, Truth, and the Fundamental Nature of Consciousness"
-date: 2026-08-05
+date: 2026-07-22
 categories: [logic, philosophy, consciousness]
 title-block: false
 toc: true
